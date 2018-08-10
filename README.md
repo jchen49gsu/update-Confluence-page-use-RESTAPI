@@ -70,8 +70,10 @@ assert not res
 ### Important notes:
 #### a. XHTML vs HTML
 Confluence accept XHTML not HTML code when doing the POST/PUT method, so make sure to have clean HTML code When using POST/PUT method. eg. XHTML must Always Be Closed. Data in \<pre\> \<\/pre\> tag might not accepted by Confluence.
-<li> Useful link for Confluence RESTAPI: </li>
-Difference between XHTML and HTML: https://www.w3schools.com/html/html_xhtml.asp
+Useful link for Confluence RESTAPI: 
+<p>Difference between XHTML and HTML: https://www.w3schools.com/html/html_xhtml.asp </p>
+
+
 #### b. Request or curl
 Since the code is trigger in Jenkins with linux environment, the version of python is old and not support <b>request module</b>. I just use curl.
 
