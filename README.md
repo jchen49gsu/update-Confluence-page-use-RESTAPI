@@ -271,7 +271,7 @@ git pull --rebase
 ### check status
 git status
 
-###show log history
+### show log history
 git log
 
 ### show detail log
@@ -281,6 +281,26 @@ git show commitNumber
 history
 
 ## 7. Shell scripts
+run python code in shell and trigger by Jenkins,
+<b>two ways</b>:
+```python
+python << END
+... code ...
+END
+```
+OR
+```python
+python report.py -htmlDir ${HTMLDIR} -buildNumber ${BUILD_NUMBER}
+
+```
+
 ## 8. Linux command
 ### .bashrc
+
+customize terminal command to use shortcut
+```shell
+WSPACE="/opt/username/workspace"
+alias ws='cd $WSPACE ; pwd'
+```
+
 ## 9. Use Jenkins console output to debug
