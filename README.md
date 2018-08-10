@@ -254,18 +254,18 @@ git commit --amend --no-edit
 git commit --amend
 
 ### combine multiple commits to one commit (in local)
-git rebase -i branchName
-•https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history
-•https://git-scm.com/book/en/v2/Git-Branching-Rebasing
-p: pick, pick the one to remain
-s: squash, meld into previous one
+<p>git rebase -i branchName </p>
+<p>•https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history </p>
+<p> •https://git-scm.com/book/en/v2/Git-Branching-Rebasing </p>
 
+<p> p: pick, pick the one to remain </p>
+<p>s: squash, meld into previous one </p>
 ### update to most recent from the remote
 git pull --rebase
 
 ### Push to remote branch
-git push --set-upstream remoteRepo         or
-git push origin remoteRepo
+<p> git push --set-upstream remoteRepo     </p>    or
+<p> git push origin remoteRepo</p>
 
 ### check status
 git status
