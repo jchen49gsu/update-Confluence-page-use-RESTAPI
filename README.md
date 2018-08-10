@@ -259,7 +259,8 @@ git commit --amend
 <p> •https://git-scm.com/book/en/v2/Git-Branching-Rebasing </p>
 
 <p> p: pick, pick the one to remain </p>
-<p>s: squash, meld into previous one </p>
+<p> s: squash, meld into previous one </p>
+
 ### update to most recent from the remote
 git pull --rebase
 
