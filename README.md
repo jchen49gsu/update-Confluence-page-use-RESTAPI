@@ -278,6 +278,10 @@ git commit --amend
 <p> p: pick, pick the one to remain </p>
 <p> s: squash, meld into previous one </p>
 
+### Before push to master remote, force to push to branch remote. Can do this without switch or set-upstream to be master remote
+
+git push -f origin HEAD:localBranch
+
 ### update to most recent from the remote
 git pull --rebase
 
