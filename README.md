@@ -86,6 +86,15 @@ https://developer.atlassian.com/server/confluence/confluence-rest-api-examples/
 
 ## 3. Python tricks
 #### JSON to python encode decode
+<p><b>Decoding JSON:</b></p>
+<p>json.loads</p>
+<p><b>Encoding JSON:</b></p>
+<p>json.dumps</p>
+
+https://docs.python.org/2/library/json.html
+
+
+
 #### python formating
 #### slicing
 #### Parser
