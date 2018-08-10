@@ -75,7 +75,9 @@ Useful link for Confluence RESTAPI:
 
 
 #### b. Request or curl
-Since the code is trigger in Jenkins with linux environment, the version of python is old and not support <b>request module</b>. I just use curl.
+<p>Since the code is trigger in Jenkins with linux environment, the version of python is old and not support <b>request module</b>. I just use curl.</p>
+<p> For special character need to use "\", eg quotes need to be \" </p>
+
 
 
 ## 2. JSON code format
@@ -124,7 +126,22 @@ with open(args.htmlDir + '/test.html', 'r') as fh:
 ```
 https://docs.python.org/2/library/argparse.html
 
-#### e. tools to use
+#### e. read or write data to file
+
+##### read
+```python
+with open(args.htmlDir + '/test.html', 'r') as fh:
+    report= fh.read()
+```
+##### write
+```python
+with open(args.htmlDir + '/test.html', 'w') as fh:
+    fh.write("data")
+```
+https://www.tutorialspoint.com/python/python_files_io.htm
+note: based on version of python, it will be different
+
+#### f. tools to use
 
 Jupyter to run python code
 http://jupyter.org/install
