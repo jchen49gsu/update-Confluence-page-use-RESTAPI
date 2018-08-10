@@ -85,7 +85,7 @@ https://jsonformatter.curiousconcept.com/
 https://developer.atlassian.com/server/confluence/confluence-rest-api-examples/
 
 ## 3. Python tricks
-#### JSON to python encode decode
+#### a. JSON to python encode decode
 <p><b>Decoding JSON:</b></p>
 <p>json.loads</p>
 <p><b>Encoding JSON:</b></p>
@@ -95,13 +95,128 @@ https://docs.python.org/2/library/json.html
 
 
 
-#### python formating
-#### slicing
-#### Parser
-#### tools to use
-Jupyter
+#### b. python formating (%s vs .format)
+```python
+'%s %s' % ('one', 'two')
+'{} {}'.format('one', 'two')
+```
+https://pyformat.info/
+
+#### c. Slicing
+```python
+idx=curr_page.index('<p> Reports list </p>')
+new_list = '<p> new list </p>'
+new_curr_page = curr_page[:idx] + new_list + curr_page[idx:]
+```
+https://www.pythoncentral.io/cutting-and-slicing-strings-in-python/
+
+#### d. Parser for command-line options, arguments and sub-commands
+```python
+import argparse
+parser = argparse.ArgumentParser()
+
+parser.add_argument('-htmlDir')
+parser.add_argument('-buildNumber')
+
+args = parser.parse_args()
+with open(args.htmlDir + '/test.html', 'r') as fh:
+    report= fh.read()
+```
+https://docs.python.org/2/library/argparse.html
+
+#### e. tools to use
+
+Jupyter to run python code
+http://jupyter.org/install
+
 ## 4. Python version problem
+Notes there can be version problem, you can check official documents to use correct function.
+https://docs.python.org/2/index.html
+
+
 ## 5. Large data set
+When I posted large data set, the confluence couldn't post it. 
+Following links might help.
+
+
+http://www.diveintopython3.net/http-web-services.html
+
+gzip in java
+http://docs.jboss.org/resteasy/docs/2.2.1.GA/userguide/html/gzip.html
+
+curl to send the data
+http://yasassriratnayake.blogspot.com/2015/08/sending-gzip-request-using-curl.html
+https://stackoverflow.com/questions/21326397/curl-get-request-with-json-parameter
+
+
+
+stream example ******
+https://pymotw.com/2/gzip/
+
+curl -v -i http://localhost/mymodule -H'Content-Encoding: gzip' --data-binary @body.gz
+https://stackoverflow.com/questions/44307771/curl-command-a-gzipped-post-body-to-an-apache-server
+
+python library
+https://docs.python.org/release/2.6.6/library/zlib.html?highlight=compress
+
+https://docs.python.org/2.7/library/gzip.html#gzip.GzipFile
+
+
+read part of file
+https://stackoverflow.com/questions/12761371/read-head-tail-of-gzip-file-without-reading-it-into-memory
+
+no attribute problem
+https://stackoverflow.com/questions/32884277/how-can-i-avoid-zipfile-instance-has-no-attribute-exit-when-extracting
+
+
+convert curl to python
+
+https://curl.trillworks.com/
+
+with open syntax
+https://www.pythonforbeginners.com/files/reading-and-writing-files-in-python
+
+Bottle/Python - “IOError: [Errno 9] read() on write-only GzipFile object” when trying to decompress request body
+https://stackoverflow.com/questions/32434352/bottle-python-ioerror-errno-9-read-on-write-only-gzipfile-object-when-t
+
+
+https://www.programcreek.com/python/example/252/gzip.GzipFile
+
+https://www.programcreek.com/python/example/2166/pycurl.POST
+https://curl.haxx.se/libcurl/c/curl_mime_init.html
+https://curl.haxx.se/mail/lib-2009-12/0184.html
+
+confluence api example
+https://cbsnorthstar.atlassian.net/wiki/spaces/ORDERENTRY/pages/80871619/Web+Ordering+REST+API
+https://developer.atlassian.com/server/confluence/confluence-rest-api-examples/
+
+pagiation
+https://developer.atlassian.com/server/confluence/pagination-in-the-rest-api/
+https://developer.atlassian.com/server/confluence/content-properties-in-the-rest-api/
+
+https://idratherbewriting.com/learnapidoc/docapis_understand_curl.html
+
+
+header, Accept-Encoding: gzip
+https://stackoverflow.com/questions/43209924/rest-api-use-the-accept-application-json-http-header
+https://developers.google.com/blogger/docs/3.0/performance
+https://github.com/mozilla/MozStumbler/issues/406
+
+
+Python StringIO replacement that works with bytes instead of strings?
+
+https://stackoverflow.com/questions/6479100/python-stringio-replacement-that-works-with-bytes-instead-of-strings
+https://stackoverflow.com/questions/32075135/python-3-in-memory-zipfile-error-string-argument-expected-got-bytes/32075279
+
+
+
+https://docs.python.org/2.6/library/json.html
+
+
+
+
+
+
 ## 6. Git command tips
 https://gist.github.com/nepsilon/156387acf9e1e72d48fa35c4fabef0b4
 
