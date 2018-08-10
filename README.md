@@ -208,12 +208,7 @@ Python StringIO replacement that works with bytes instead of strings?
 https://stackoverflow.com/questions/6479100/python-stringio-replacement-that-works-with-bytes-instead-of-strings
 https://stackoverflow.com/questions/32075135/python-3-in-memory-zipfile-error-string-argument-expected-got-bytes/32075279
 
-
-
 https://docs.python.org/2.6/library/json.html
-
-
-
 
 
 
@@ -222,6 +217,67 @@ https://gist.github.com/nepsilon/156387acf9e1e72d48fa35c4fabef0b4
 
 combine git commits to one commit
 
+### Clone repo while in workspace
+git clone --recursive ssh://git@xxxxxxxxxxxxxxxxx.git myrepo
+
+### Create a branch to do work that you plan to check-in. 
+git checkout -b mybranch
+
+### Check your branch
+git branch
+
+### switch to other branch
+git checkout branchname
+
+### Check the remote branch
+git branch -vv
+
+### Change the remote branch name
+git branch -u remoteBranchName
+
+### add changes
+git add -u
+
+### add specific changes
+git cherry-pick commitNumber
+
+### abort the cherry-pick change
+git cherry-pick --abort
+
+### Make some changes, commit them 
+git commit -a -m “message” 
+
+### Change the code but bot change the commit message
+git commit --amend --no-edit
+
+### Change the commit information
+git commit --amend
+
+### combine multiple commits to one commit (in local)
+git rebase -i branchName
+•https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history
+•https://git-scm.com/book/en/v2/Git-Branching-Rebasing
+p: pick, pick the one to remain
+s: squash, meld into previous one
+
+### update to most recent from the remote
+git pull --rebase
+
+### Push to remote branch
+git push --set-upstream remoteRepo         or
+git push origin remoteRepo
+
+### check status
+git status
+
+###show log history
+git log
+
+### show detail log
+git show commitNumber
+
+### show all the command you use
+history
 
 ## 7. Shell scripts
 ## 8. Linux command
