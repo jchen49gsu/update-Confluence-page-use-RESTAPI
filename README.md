@@ -325,3 +325,9 @@ alias ws='cd $WSPACE ; pwd'
 ```
 
 ## 9. Use Jenkins console output to debug
+## 10. Use config parser python 
+```python
+conf = ConfigParser.ConfigParser()
+	conf.read(cfg_file)
+	sections = conf.sections()
+```
