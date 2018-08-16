@@ -141,7 +141,14 @@ with open(args.htmlDir + '/test.html', 'w') as fh:
 https://www.tutorialspoint.com/python/python_files_io.htm
 note: based on version of python, it will be different
 
-#### f. tools to use
+#### f. fromkeys
+The method fromkeys() creates a new dictionary with keys from seq and values set to value.
+```python
+seq = ('name', 'age', 'sex')
+dict = dict.fromkeys(seq)
+print "New Dictionary : %s" %  str(dict)
+```
+#### g. tools to use
 
 Jupyter to run python code
 http://jupyter.org/install
