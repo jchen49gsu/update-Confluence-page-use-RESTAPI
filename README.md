@@ -334,3 +334,7 @@ conf = ConfigParser.ConfigParser()
 https://docs.python.org/3/library/configparser.html
 https://my.oschina.net/jk409/blog/317766
 
+## 11. Confluence error
+
+statuscode:501,"message":unable to save changes made outside the editor to ContentID(id=0)
+https://community.atlassian.com/t5/Confluence-questions/statuscode-501-quot-message-quot-unable-to-save-changes-made/qaq-p/865607
