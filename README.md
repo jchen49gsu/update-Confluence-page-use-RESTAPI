@@ -148,6 +148,7 @@ seq = ('name', 'age', 'sex')
 dict = dict.fromkeys(seq)
 print "New Dictionary : %s" %  str(dict)
 ```
+https://www.tutorialspoint.com/python/dictionary_fromkeys.htm
 #### g. tools to use
 
 Jupyter to run python code
