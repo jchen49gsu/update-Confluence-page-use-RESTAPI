@@ -331,3 +331,6 @@ conf = ConfigParser.ConfigParser()
 	conf.read(cfg_file)
 	sections = conf.sections()
 ```
+https://docs.python.org/3/library/configparser.html
+https://my.oschina.net/jk409/blog/317766
+
