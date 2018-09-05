@@ -275,6 +275,13 @@ git commit -a -m “message”
 ### Change the code but bot change the commit message
 git commit --amend --no-edit
 
+### show reflog
+git reflog
+
+### reverse to previous or exaclty commit id
+git reset --hard commit id
+git reset --hard HEAD^ （back to last version）
+
 ### Change the commit information
 git commit --amend
 
@@ -308,6 +315,7 @@ git show commitNumber
 
 ### show all the command you use
 history
+
 
 ## 7. Shell scripts
 run python code in shell and trigger by Jenkins,
