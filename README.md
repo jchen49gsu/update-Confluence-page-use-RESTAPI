@@ -344,11 +344,20 @@ alias ws='cd $WSPACE ; pwd'
 ## 10. Use config parser python 
 ```python
 conf = ConfigParser.ConfigParser()
-	conf.read(cfg_file)
-	sections = conf.sections()
+conf.read(cfg_file)
+sections = conf.sections()
 ```
+
 https://docs.python.org/3/library/configparser.html
 https://my.oschina.net/jk409/blog/317766
+
+Transforms the option name option as found in an input file or as passed in by client code to the form that should be used in the internal structures. The default implementation returns a lower-case version of option; subclasses may override this or client code can set an attribute of this name on instances to affect this behavior.
+
+You don’t necessarily need to subclass a ConfigParser to use this method, you can also re-set it on an instance, to a function that takes a string argument. Setting it to str, for example, would make option names case sensitive
+Keep the original text in the config file
+```python
+conf.optionxform = str
+```
 
 ## 11. Confluence error
 
