@@ -1,11 +1,11 @@
-### make directory
+# make directory
 mkdir webproject
 
-### copy document from one folder to the other
+# copy document from one folder to the other
 cp source destination
 
-### copy file 
+# copy file 
 cp -R source destination
 
-### find out the path of the file
+# find out the path of the file
 realpath test.doc
