@@ -9,3 +9,9 @@ cp -R source destination
 
 # find out the path of the file
 realpath test.doc
+
+
+#create a new branch of the remote branch(not master)
+$ git branch -a
+$ git checkout remote branch
+$ git branch -b branchname
