@@ -15,3 +15,10 @@ realpath test.doc
 $ git branch -a
 $ git checkout remote branch
 $ git branch -b branchname
+
+
+# remote master repo change name, local need to update with o
+$git remote rm origin 
+$git remote add origin ssh://git@xxxxxx.git
+$git remote -v
+
