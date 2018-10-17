@@ -1,0 +1,13 @@
+1. go to a particular line or word in a file:
+   :14
+   
+2. delete lines:
+delete 5 lines:  5dd
+delete current line: dd
+
+3. undo:
+control + c and then press "u"
+
+4. delete all lines:
+go to the first line: gg
+delete all lines: dG
