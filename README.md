@@ -287,6 +287,7 @@ git commit --amend
 
 ### combine multiple commits to one commit (in local)
 <p>git rebase -i branchName </p>
+<p>git rebase -i HEAD~4 </p>
 <p>•https://robots.thoughtbot.com/git-interactive-rebase-squash-amend-rewriting-history </p>
 <p> •https://git-scm.com/book/en/v2/Git-Branching-Rebasing </p>
 
