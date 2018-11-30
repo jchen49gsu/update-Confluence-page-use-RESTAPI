@@ -22,3 +22,7 @@ $git remote rm origin
 $git remote add origin ssh://git@xxxxxx.git
 $git remote -v
 
+------------------------------------------
+# if you have less commits to checkout and master has updates you need to rebase
+create a local master branch and cherry pick the commit#
+$git cherry-pick commit#
