@@ -16,6 +16,8 @@ $ git branch -a
 $ git checkout remote branch
 $ git branch -b branchname
 
+-----the other way to do it(this will set the remotebranch as the upstream)
+$git checout -b localbranchname remotebranch
 
 # remote master repo change name, local need to update with o
 $git remote rm origin 
